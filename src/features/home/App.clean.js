@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import styles from './App.clean.less';
 /*
   This is the root component of your app. Here you define the overall layout
   and the container of the react router.
@@ -17,7 +17,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="home-app">
+      <div className={styles["home-app"]}>
         {this.props.children}
       </div>
     );

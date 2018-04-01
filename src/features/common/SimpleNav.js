@@ -6,6 +6,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import styles from './SimpleNav.less';
 
 export default class SimpleNav extends PureComponent {
   static propTypes = {
@@ -38,7 +39,7 @@ export default class SimpleNav extends PureComponent {
 
   render() {
     return (
-      <div className="common-simple-nav">
+      <div className={styles["common-simple-nav"]}>
         {this.renderLinks(this.props.routes[0].childRoutes, '')}
       </div>
     );

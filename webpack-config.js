@@ -96,8 +96,8 @@ module.exports = (type) => { // eslint-disable-line
           loader: 'file-loader'
         }, {
           test: /\.less$/,
-          loader: isDev ? 'style-loader!css-loader?sourceMap!less-loader?sourceMap'
-            : 'style-loader!css-loader!less-loader'
+          loader: isDev ? 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]&sourceMap!less-loader?sourceMap'
+            : 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!less-loader'
         }, {
           test: /\.css$/,
           loader: 'style-loader!css-loader'

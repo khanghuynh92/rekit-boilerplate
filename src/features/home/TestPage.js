@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import styles from './TestPage.less';
 
 export class TestPage extends Component {
   static propTypes = {
@@ -12,7 +13,7 @@ export class TestPage extends Component {
 
   render() {
     return (
-      <div className="home-test-page">
+      <div className={styles["home-test-page"]}>
         Page Content: home/TestPage1
       </div>
     );
