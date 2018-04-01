@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import styles from './RedditList.less';
+import styles from './RedditList.scss';
 
 export default class RedditList extends PureComponent {
   static propTypes = {

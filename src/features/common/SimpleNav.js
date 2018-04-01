@@ -6,7 +6,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './SimpleNav.less';
+import styles from './SimpleNav.scss';
 
 export default class SimpleNav extends PureComponent {
   static propTypes = {

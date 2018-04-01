@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { RedditList } from './';
 import { counterPlusOne, counterMinusOne, resetCounter, fetchRedditReactjsList } from './redux/actions';
-import styles from './DefaultPage.less';
+import styles from './DefaultPage.scss';
 
 
 export class DefaultPage extends Component {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SimpleNav from '../common/SimpleNav';
 import routeConfig from '../../common/routeConfig';
-import styles from './App.less';
+import styles from './App.scss';
 /*
   This is the root component of your app. Here you define the overall layout
   and the container of the react router. The default one is a two columns layout.
@@ -20,7 +20,7 @@ export default class App extends Component {
   render() {
     return (
       <div className={styles["home-app"]}>
-        <div className="sidebar">
+        <div className={styles["sidebar"]}>
           <SimpleNav routes={routeConfig} />
           <p className={styles["memo"]}>
             Above is a simple navigation tree for you to navigate between pages,

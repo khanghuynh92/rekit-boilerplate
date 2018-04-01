@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import styles from './PageNotFound.less';
+import styles from './PageNotFound.scss';
 
 export default class PageNotFound extends PureComponent {
   render() {

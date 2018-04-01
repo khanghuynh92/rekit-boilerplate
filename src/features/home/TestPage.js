@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import styles from './TestPage.less';
+import styles from './TestPage.scss';
 
 export class TestPage extends Component {
   static propTypes = {
